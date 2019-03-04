@@ -1,0 +1,9 @@
+ext/platform/android/generated/src/com/rho/rubynative/RubyNativeBase.java
+ext/platform/android/generated/src/com/rho/rubynative/RubyNativeFactorySingleton.java
+ext/platform/android/generated/src/com/rho/rubynative/RubyNativeSingletonBase.java
+ext/platform/android/generated/src/com/rho/rubynative/IRubyNative.java
+ext/platform/android/generated/src/com/rho/rubynative/IRubyNativeFactory.java
+ext/platform/android/generated/src/com/rho/rubynative/IRubyNativeSingleton.java
+ext/platform/android/src/com/rho/rubynative/RubyNative.java
+ext/platform/android/src/com/rho/rubynative/RubyNativeFactory.java
+ext/platform/android/src/com/rho/rubynative/RubyNativeSingleton.java

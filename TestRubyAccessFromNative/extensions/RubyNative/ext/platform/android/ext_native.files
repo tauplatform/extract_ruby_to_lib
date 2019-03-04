@@ -1,0 +1,7 @@
+ext/platform/android/generated/jni/RubyNative.cpp
+ext/platform/android/generated/jni/rubynative_ruby_wrap.cpp
+ext/platform/android/generated/jni/rubynative_js_wrap.cpp
+ext/platform/android/jni/RubyNative_impl.cpp
+ext/shared/generated/rubynative_api_init.cpp
+ext/shared/generated/rubynative_js_api.cpp
+ext/shared/generated/rubynative_ruby_api.c
