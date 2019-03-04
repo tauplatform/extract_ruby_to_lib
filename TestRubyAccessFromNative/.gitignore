@@ -8,4 +8,5 @@ bin/
 project/
 rhosimulator/
 public/api/generated/
+generated/
 .cbc
