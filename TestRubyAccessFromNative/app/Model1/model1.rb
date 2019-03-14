@@ -7,4 +7,14 @@ class Model1
   # enable :sync
 
   #add model specific code here
+
+  def self.getAllItems
+      items = Model1.find(:all)
+      puts "$$$$$ items = "+items.to_s
+      puts "$$$$$ items.class = "+items.class.to_s
+      puts "$$$$$ items.class.name = "+items.class.name.to_s
+      items.to_s
+  end
+
+
 end

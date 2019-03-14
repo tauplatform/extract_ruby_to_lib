@@ -1,4 +1,6 @@
 require 'rho/rhoapplication'
+require 'preloader'
+
 
 class AppApplication < Rho::RhoApplication
   def initialize
@@ -9,7 +11,8 @@ class AppApplication < Rho::RhoApplication
     #@@toolbar = nil
     super
 
+    Preloader.load
 
-    
+
   end
 end

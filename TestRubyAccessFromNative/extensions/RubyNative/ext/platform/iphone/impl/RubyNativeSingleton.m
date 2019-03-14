@@ -5,16 +5,17 @@
 @implementation RubyNativeSingleton
 
 
--(NSString*)getInitialDefaultID {
-    return @"SCN1";
+
+-(void) test1:(id<IMethodResult>)methodResult {
+    [methodResult setResult:@"result 1"];
 }
 
+-(void) test2:(id<IMethodResult>)methodResult {
+    [methodResult setResult:@"result 2"];
+}
 
--(void) enumerate:(id<IMethodResult>)methodResult {
-    NSMutableArray* ar = [NSMutableArray arrayWithCapacity:2];
-    [ar addObject:@"SCN1"];
-    [ar addObject:@"SCN2"];
-    [methodResult setResult:ar];
+-(void) test3:(id<IMethodResult>)methodResult {
+    [methodResult setResult:@"result 3"];
 }
 
 

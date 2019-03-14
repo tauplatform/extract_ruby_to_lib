@@ -7,6 +7,10 @@ class Model1Controller < Rho::RhoController
   # GET /Model1
   def index
     @model1s = Model1.find(:all)
+    puts "$$$$$ Model1.class = "+Model1.class.to_s
+    puts "$$$$$ Model1.class.name = "+Model1.class.name.to_s
+    puts "$$$$$ Model1.name = "+Model1.name.to_s
+    puts "$$$$$ self.class.name = "+self.class.name.to_s
     render :back => '/app'
   end
 
@@ -53,6 +57,6 @@ class Model1Controller < Rho::RhoController
   def delete
     @model1 = Model1.find(@params['id'])
     @model1.destroy if @model1
-    redirect :action => :index  
+    redirect :action => :index
   end
 end

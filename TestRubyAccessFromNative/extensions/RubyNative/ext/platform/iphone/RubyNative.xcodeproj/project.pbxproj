@@ -7,24 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA3E1F211779EFAA00F5E33A /* RubyNative.h in Headers */ = {isa = PBXBuildFile; fileRef = FA3E1F1B1779EFAA00F5E33A /* RubyNative.h */; };
-		FA3E1F221779EFAA00F5E33A /* RubyNative.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3E1F1C1779EFAA00F5E33A /* RubyNative.m */; };
-		FA3E1F231779EFAA00F5E33A /* RubyNativeFactorySingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3E1F1D1779EFAA00F5E33A /* RubyNativeFactorySingleton.m */; };
-		FA3E1F241779EFAA00F5E33A /* RubyNativeSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3E1F1E1779EFAA00F5E33A /* RubyNativeSetup.m */; };
-		FA3E1F251779EFAA00F5E33A /* RubyNativeSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = FA3E1F1F1779EFAA00F5E33A /* RubyNativeSingleton.h */; };
-		FA3E1F261779EFAA00F5E33A /* RubyNativeSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3E1F201779EFAA00F5E33A /* RubyNativeSingleton.m */; };
-		FA3E1F281779EFB100F5E33A /* IRubyNative.h in Headers */ = {isa = PBXBuildFile; fileRef = FA3E1F271779EFB100F5E33A /* IRubyNative.h */; };
-		FA3E1F2F1779EFBB00F5E33A /* RubyNativeBase.h in Headers */ = {isa = PBXBuildFile; fileRef = FA3E1F291779EFBB00F5E33A /* RubyNativeBase.h */; };
-		FA3E1F301779EFBB00F5E33A /* RubyNativeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3E1F2A1779EFBB00F5E33A /* RubyNativeBase.m */; };
-		FA3E1F311779EFBB00F5E33A /* RubyNativeFactoryBase.h in Headers */ = {isa = PBXBuildFile; fileRef = FA3E1F2B1779EFBB00F5E33A /* RubyNativeFactoryBase.h */; };
-		FA3E1F321779EFBB00F5E33A /* RubyNativeFactoryBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3E1F2C1779EFBB00F5E33A /* RubyNativeFactoryBase.m */; };
-		FA3E1F331779EFBB00F5E33A /* RubyNativeSingletonBase.h in Headers */ = {isa = PBXBuildFile; fileRef = FA3E1F2D1779EFBB00F5E33A /* RubyNativeSingletonBase.h */; };
-		FA3E1F341779EFBB00F5E33A /* RubyNativeSingletonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3E1F2E1779EFBB00F5E33A /* RubyNativeSingletonBase.m */; };
-		FA3E1F361779EFC400F5E33A /* rubynative_js_wrap.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA3E1F351779EFC400F5E33A /* rubynative_js_wrap.mm */; };
-		FA3E1F381779EFCB00F5E33A /* rubynative_ruby_wrap.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3E1F371779EFCB00F5E33A /* rubynative_ruby_wrap.m */; };
-		FA3E1F3C1779EFD700F5E33A /* rubynative_api_init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA3E1F391779EFD700F5E33A /* rubynative_api_init.cpp */; };
-		FA3E1F3D1779EFD700F5E33A /* rubynative_js_api.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA3E1F3A1779EFD700F5E33A /* rubynative_js_api.cpp */; };
-		FA3E1F3E1779EFD700F5E33A /* rubynative_ruby_api.c in Sources */ = {isa = PBXBuildFile; fileRef = FA3E1F3B1779EFD700F5E33A /* rubynative_ruby_api.c */; };
+		FA4A97E42239D9BC009D6142 /* rubynative_api_init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA3E1F391779EFD700F5E33A /* rubynative_api_init.cpp */; };
+		FA4A97E52239D9BC009D6142 /* rubynative_js_api.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA3E1F3A1779EFD700F5E33A /* rubynative_js_api.cpp */; };
+		FA4A97E62239D9BC009D6142 /* rubynative_ruby_api.c in Sources */ = {isa = PBXBuildFile; fileRef = FA3E1F3B1779EFD700F5E33A /* rubynative_ruby_api.c */; };
+		FA4A97EE2239D9F0009D6142 /* RubyNativeBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA4A97E92239D9F0009D6142 /* RubyNativeBase.cpp */; };
+		FA4A97EF2239D9F0009D6142 /* RubyNative_js_wrap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA4A97EA2239D9F0009D6142 /* RubyNative_js_wrap.cpp */; };
+		FA4A97F02239D9F0009D6142 /* RubyNativeBase.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4A97EB2239D9F0009D6142 /* RubyNativeBase.h */; };
+		FA4A97F12239D9F0009D6142 /* RubyNative_ruby_wrap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA4A97EC2239D9F0009D6142 /* RubyNative_ruby_wrap.cpp */; };
+		FA4A97F22239D9F0009D6142 /* IRubyNative.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4A97ED2239D9F0009D6142 /* IRubyNative.h */; };
+		FA4A97F62239E7D4009D6142 /* rubynative_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA4A97F52239E7D4009D6142 /* rubynative_impl.cpp */; };
+		FA4A97F92239E814009D6142 /* NativeModule.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4A97F72239E814009D6142 /* NativeModule.h */; };
+		FA4A97FA2239E814009D6142 /* NativeModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA4A97F82239E814009D6142 /* NativeModule.cpp */; };
 		FAC155E7145855CF0016F3BD /* RubyNative_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = FAD45FD51225FED600141873 /* RubyNative_Prefix.pch */; };
 		FAC155EE145855CF0016F3BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		FAC155EF145855CF0016F3BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD4602C12260A8500141873 /* UIKit.framework */; };
@@ -50,6 +43,14 @@
 		FA3E1F391779EFD700F5E33A /* rubynative_api_init.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rubynative_api_init.cpp; path = ../../shared/generated/rubynative_api_init.cpp; sourceTree = "<group>"; };
 		FA3E1F3A1779EFD700F5E33A /* rubynative_js_api.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rubynative_js_api.cpp; path = ../../shared/generated/rubynative_js_api.cpp; sourceTree = "<group>"; };
 		FA3E1F3B1779EFD700F5E33A /* rubynative_ruby_api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = rubynative_ruby_api.c; path = ../../shared/generated/rubynative_ruby_api.c; sourceTree = "<group>"; };
+		FA4A97E92239D9F0009D6142 /* RubyNativeBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RubyNativeBase.cpp; path = ../../shared/generated/cpp/RubyNativeBase.cpp; sourceTree = "<group>"; };
+		FA4A97EA2239D9F0009D6142 /* RubyNative_js_wrap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RubyNative_js_wrap.cpp; path = ../../shared/generated/cpp/RubyNative_js_wrap.cpp; sourceTree = "<group>"; };
+		FA4A97EB2239D9F0009D6142 /* RubyNativeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RubyNativeBase.h; path = ../../shared/generated/cpp/RubyNativeBase.h; sourceTree = "<group>"; };
+		FA4A97EC2239D9F0009D6142 /* RubyNative_ruby_wrap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RubyNative_ruby_wrap.cpp; path = ../../shared/generated/cpp/RubyNative_ruby_wrap.cpp; sourceTree = "<group>"; };
+		FA4A97ED2239D9F0009D6142 /* IRubyNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRubyNative.h; path = ../../shared/generated/cpp/IRubyNative.h; sourceTree = "<group>"; };
+		FA4A97F52239E7D4009D6142 /* rubynative_impl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rubynative_impl.cpp; path = ../../shared/cpp/rubynative_impl.cpp; sourceTree = "<group>"; };
+		FA4A97F72239E814009D6142 /* NativeModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NativeModule.h; path = ../../shared/cpp/NativeModule.h; sourceTree = "<group>"; };
+		FA4A97F82239E814009D6142 /* NativeModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NativeModule.cpp; path = ../../shared/cpp/NativeModule.cpp; sourceTree = "<group>"; };
 		FAC155F3145855CF0016F3BD /* libRubyNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRubyNative.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD45FD51225FED600141873 /* RubyNative_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RubyNative_Prefix.pch; sourceTree = "<group>"; };
 		FAD4602C12260A8500141873 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -79,6 +80,7 @@
 		0867D691FE84028FC02AAC07 /* RubyNative */ = {
 			isa = PBXGroup;
 			children = (
+				FA4A97E32239D951009D6142 /* CPP_Implementation */,
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
@@ -177,6 +179,37 @@
 			name = api;
 			sourceTree = "<group>";
 		};
+		FA4A97E32239D951009D6142 /* CPP_Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				FA4A97E82239D9DD009D6142 /* impl */,
+				FA4A97E72239D9D5009D6142 /* generated */,
+			);
+			name = CPP_Implementation;
+			sourceTree = "<group>";
+		};
+		FA4A97E72239D9D5009D6142 /* generated */ = {
+			isa = PBXGroup;
+			children = (
+				FA4A97ED2239D9F0009D6142 /* IRubyNative.h */,
+				FA4A97EA2239D9F0009D6142 /* RubyNative_js_wrap.cpp */,
+				FA4A97EC2239D9F0009D6142 /* RubyNative_ruby_wrap.cpp */,
+				FA4A97E92239D9F0009D6142 /* RubyNativeBase.cpp */,
+				FA4A97EB2239D9F0009D6142 /* RubyNativeBase.h */,
+			);
+			name = generated;
+			sourceTree = "<group>";
+		};
+		FA4A97E82239D9DD009D6142 /* impl */ = {
+			isa = PBXGroup;
+			children = (
+				FA4A97F82239E814009D6142 /* NativeModule.cpp */,
+				FA4A97F72239E814009D6142 /* NativeModule.h */,
+				FA4A97F52239E7D4009D6142 /* rubynative_impl.cpp */,
+			);
+			name = impl;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -184,13 +217,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA4A97F22239D9F0009D6142 /* IRubyNative.h in Headers */,
+				FA4A97F92239E814009D6142 /* NativeModule.h in Headers */,
+				FA4A97F02239D9F0009D6142 /* RubyNativeBase.h in Headers */,
 				FAC155E7145855CF0016F3BD /* RubyNative_Prefix.pch in Headers */,
-				FA3E1F211779EFAA00F5E33A /* RubyNative.h in Headers */,
-				FA3E1F251779EFAA00F5E33A /* RubyNativeSingleton.h in Headers */,
-				FA3E1F281779EFB100F5E33A /* IRubyNative.h in Headers */,
-				FA3E1F2F1779EFBB00F5E33A /* RubyNativeBase.h in Headers */,
-				FA3E1F311779EFBB00F5E33A /* RubyNativeFactoryBase.h in Headers */,
-				FA3E1F331779EFBB00F5E33A /* RubyNativeSingletonBase.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +249,8 @@
 /* Begin PBXProject section */
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "RubyNative" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
@@ -244,18 +276,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA3E1F221779EFAA00F5E33A /* RubyNative.m in Sources */,
-				FA3E1F231779EFAA00F5E33A /* RubyNativeFactorySingleton.m in Sources */,
-				FA3E1F241779EFAA00F5E33A /* RubyNativeSetup.m in Sources */,
-				FA3E1F261779EFAA00F5E33A /* RubyNativeSingleton.m in Sources */,
-				FA3E1F301779EFBB00F5E33A /* RubyNativeBase.m in Sources */,
-				FA3E1F321779EFBB00F5E33A /* RubyNativeFactoryBase.m in Sources */,
-				FA3E1F341779EFBB00F5E33A /* RubyNativeSingletonBase.m in Sources */,
-				FA3E1F361779EFC400F5E33A /* rubynative_js_wrap.mm in Sources */,
-				FA3E1F381779EFCB00F5E33A /* rubynative_ruby_wrap.m in Sources */,
-				FA3E1F3C1779EFD700F5E33A /* rubynative_api_init.cpp in Sources */,
-				FA3E1F3D1779EFD700F5E33A /* rubynative_js_api.cpp in Sources */,
-				FA3E1F3E1779EFD700F5E33A /* rubynative_ruby_api.c in Sources */,
+				FA4A97F12239D9F0009D6142 /* RubyNative_ruby_wrap.cpp in Sources */,
+				FA4A97EF2239D9F0009D6142 /* RubyNative_js_wrap.cpp in Sources */,
+				FA4A97E62239D9BC009D6142 /* rubynative_ruby_api.c in Sources */,
+				FA4A97E52239D9BC009D6142 /* rubynative_js_api.cpp in Sources */,
+				FA4A97F62239E7D4009D6142 /* rubynative_impl.cpp in Sources */,
+				FA4A97E42239D9BC009D6142 /* rubynative_api_init.cpp in Sources */,
+				FA4A97FA2239E814009D6142 /* NativeModule.cpp in Sources */,
+				FA4A97EE2239D9F0009D6142 /* RubyNativeBase.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +303,12 @@
 					"$(RHO_ROOT)/platform/shared/ruby/include",
 					"$(RHO_ROOT)/platform/shared/ruby/iphone",
 					"$(RHO_ROOT)/platform/shared",
+					/Users/MOHUS/tauplatform/rhodes.extract_ruby_to_lib/platform/shared/common,
+					/Users/MOHUS/tauplatform/rhodes.extract_ruby_to_lib/platform/shared/rubyext,
+					/Users/MOHUS/tauplatform/rhodes.extract_ruby_to_lib/platform/shared/ruby/include,
+					/Users/MOHUS/tauplatform/rhodes.extract_ruby_to_lib/platform/shared/ruby/iphone,
+					/Users/MOHUS/tauplatform/rhodes.extract_ruby_to_lib/platform/shared,
+					/Users/MOHUS/tauplatform/rhodes.extract_ruby_to_lib/platform/iphone/Classes,
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = NO;
@@ -296,6 +330,12 @@
 					"$(RHO_ROOT)/platform/shared/ruby/include",
 					"$(RHO_ROOT)/platform/shared/ruby/iphone",
 					"$(RHO_ROOT)/platform/shared",
+					/Users/MOHUS/tauplatform/rhodes.extract_ruby_to_lib/platform/shared/common,
+					/Users/MOHUS/tauplatform/rhodes.extract_ruby_to_lib/platform/shared/rubyext,
+					/Users/MOHUS/tauplatform/rhodes.extract_ruby_to_lib/platform/shared/ruby/include,
+					/Users/MOHUS/tauplatform/rhodes.extract_ruby_to_lib/platform/shared/ruby/iphone,
+					/Users/MOHUS/tauplatform/rhodes.extract_ruby_to_lib/platform/shared,
+					/Users/MOHUS/tauplatform/rhodes.extract_ruby_to_lib/platform/iphone/Classes,
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = NO;
