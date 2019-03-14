@@ -13,7 +13,20 @@ class Model1
       puts "$$$$$ items = "+items.to_s
       puts "$$$$$ items.class = "+items.class.to_s
       puts "$$$$$ items.class.name = "+items.class.name.to_s
-      items.to_s
+      items
+  end
+
+  def self.getAllItemsAsHashes
+      items = Model1.find(:all)
+      ar = []
+      items.each do |model1|
+          h = {}
+          h["attr1"] = model1.attr1
+          h["attr2"] = model1.attr2
+          h["attr3"] = model1.attr3
+          ar << h
+      end
+      ar
   end
 
 
