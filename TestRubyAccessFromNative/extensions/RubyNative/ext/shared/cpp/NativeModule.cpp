@@ -7,7 +7,24 @@
 
 #include "rhoruby/api/RhoRuby.h"
 
+
+
+
 using namespace rho::ruby;
+
+
+class CRubyNativeCallback : public IRubyNativeCallback {
+    
+    virtual void onRubyNative(IObject* param) {
+        SmartPointer<IString> tr((IString*)param);
+        const char* s = tr->getUTF8();
+        int o = 0;
+        o = 9;
+        o = 10;
+    }
+    
+};
+
 
 NativeModule::NativeModule() {
     
@@ -41,6 +58,9 @@ rho::String NativeModule::test1() {
         if (i < (ar->getItemsCount()-1)) {
             str = str + ", ";
         }
+        attr1->release();
+        attr2->release();
+        attr3->release();
     }
     str = str + " ]";
     result->release();
@@ -73,7 +93,11 @@ rho::String NativeModule::test2() {
         if (i < (ar->getItemsCount()-1)) {
             str = str + ", ";
         }
+        attr1->release();
+        attr2->release();
+        attr3->release();
     }
+    ar->release();
     str = str + " ]";
     result->release();
     
@@ -81,5 +105,36 @@ rho::String NativeModule::test2() {
 }
 
 rho::String NativeModule::test3() {
+    IRhoRuby* rr = RhoRubySingletone::getRhoRuby();
+    rr->addRubyNativeCallback("myCallback01", new CRubyNativeCallback());
+    SmartPointer<IObject> model1(rr->makeRubyClassObject("Model1"));
+    
+    SmartPointer<IMutableString> param((IMutableString*)rr->makeBaseTypeObject(BASIC_TYPES::MutableString));
+    param->setUTF8("test UTF8 string from native");
+    
+    SmartPointer<IMutableArray> params((IMutableArray*)rr->makeBaseTypeObject(BASIC_TYPES::MutableArray));
+    SmartPointer<IMutableString> param1((IMutableString*)rr->makeBaseTypeObject(BASIC_TYPES::MutableString));
+    param1->setUTF8("param1_string");
+    
+    params->addItem(param1.getPointer());
+
+    SmartPointer<IMutableHash> param2((IMutableHash*)rr->makeBaseTypeObject(BASIC_TYPES::MutableHash));
+    
+    SmartPointer<IMutableBoolean> param2_1((IMutableBoolean*)rr->makeBaseTypeObject(BASIC_TYPES::MutableBoolean));
+    param2_1->setBool(true);
+    param2->addItem("hashparam1_bool", param2_1.getPointer());
+    
+    SmartPointer<IMutableInteger> param2_2((IMutableInteger*)rr->makeBaseTypeObject(BASIC_TYPES::MutableInteger));
+    param2_2->setLong(12345);
+    param2->addItem("hashparam2_int", param2_2.getPointer());
+
+    SmartPointer<IMutableFloat> param2_3((IMutableFloat*)rr->makeBaseTypeObject(BASIC_TYPES::MutableFloat));
+    param2_3->setDouble(0.5f);
+    param2->addItem("hashparam3_float", param2_3.getPointer());
+
+    params->addItem(param2.getPointer());
+    
+    SmartPointer<IObject> result(rr->executeRubyObjectMethod(model1.getPointer(), "callNativeCallback", params.getPointer()));
+
     return "CPP result 03";
 }
