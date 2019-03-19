@@ -30,4 +30,13 @@ class Model1
   end
 
 
+  def self.callNativeCallback(param1, param2)
+      #puts "$$$$$ Model1.callNativeCallback() param = "+param.to_s
+      puts "$$$$$ Model1.callNativeCallback() param1 = "+param1.to_s
+      puts "$$$$$ Model1.callNativeCallback() param2 = "+param2.to_s
+
+      Rho::Ruby.callNativeCallback("myCallback01", "testString result 345");
+  end
+
+
 end
