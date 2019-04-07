@@ -1,5 +1,7 @@
 ## Note: sdk is full path to Rhodes root. If not defined - automatically find latest installed Rhodes gem
-#sdk: "/Users/MOHUS/tauplatform/rhodes.extract_ruby_to_lib"
+
+sdk: "/Users/MOHUS/tauplatform/rhodes.extract_ruby_to_lib"
+
 sdkversion: 7.1.0
 name: TestRubyAccessFromNative
 version: 1.0
@@ -9,6 +11,9 @@ vendor: rhomobile
 rho_app_id: com.rhomobile.testrubyaccessfromnative
 build: debug
 applog: rholog.txt
+
+
+iphone_enable_startup_logging: 1
 
 # enable encrypt of database
 #encrypt_database: 1
@@ -145,7 +150,8 @@ sailfish:
   extensions: ["mediacapture", "barcode", "signature", "rhoconnect-client", "serialport"]
 
 
-extensions: ["RubyNative"]
+#extensions: ["RubyNative"]
+extensions: []
 
 rhobundle:
   exclude_items:

@@ -30,12 +30,18 @@ class Model1
   end
 
 
-  def self.callNativeCallback(param1, param2)
+  def self.fillModelByPredefinedSet
+      #item = Model1.new({'attr1' => 'ZORRRRO', 'attr2' => 'XORRRO', 'attr3' => 'CORRRRO'})
+      #item.save
+      item = Model1.new({'attr1' => '111', 'attr2' => '222', 'attr3' => '333'})
+      item.save
+  end
+
+  def self.callNativeCallback(param1)
       #puts "$$$$$ Model1.callNativeCallback() param = "+param.to_s
       puts "$$$$$ Model1.callNativeCallback() param1 = "+param1.to_s
-      puts "$$$$$ Model1.callNativeCallback() param2 = "+param2.to_s
 
-      Rho::Ruby.callNativeCallback("myCallback01", "testString result 345");
+      Rho::Ruby.callNativeCallback("myCallback01", "testString result 777");
   end
 
 
