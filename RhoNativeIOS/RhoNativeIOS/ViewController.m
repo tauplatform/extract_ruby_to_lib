@@ -59,11 +59,20 @@
     NSLog(@"$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
 }
 
+
+-(void) fillModelByTwoItems {
+    
+    id<IRhoRuby> rr = [RhoRubySingletone getRhoRuby];
+    id<IRhoRubyObject>model1 = [rr makeRubyClassObject:@"Model1"];
+    [rr executeRubyObjectMethod:model1 method_name:@"fillModelByPredefinedSet" parameters:nil];
+
+}
+
 - (void) run_test_02 {
     id<IRhoRuby> rr = [RhoRubySingletone getRhoRuby];
     [rr addRubyNativeCallback:self callback_id:@"myCallback01"];
     id<IRhoRubyObject>model1 = [rr makeRubyClassObject:@"Model1"];
-
+    
     id<IRhoRubyMutableHash> r_hash = (id<IRhoRubyMutableHash>)[rr makeBaseTypeObject:kRhoRubyMutableHash];
     
     id<IRhoRubyMutableInteger> r_int = (id<IRhoRubyMutableInteger>)[rr makeBaseTypeObject:kRhoRubyMutableInteger];
@@ -91,12 +100,24 @@
 }
 
 
+-(void) rhoRubyRunnableRun {
+    
+    [self run_test_01];
+    
+}
+
 - (IBAction)onTest01Run:(id)sender {
     NSLog(@"$$$ test 01 START");
+    
+    
+    [self fillModelByTwoItems];
     
     //run_rho_test();
     //[self run_test_01];
     [self run_test_02];
+    
+    id<IRhoRuby> rr = [RhoRubySingletone getRhoRuby];
+    [rr executeInRubyThread:self];
     
     NSLog(@"$$$ test 01 FINISH");}
 

@@ -31,8 +31,8 @@ class Model1
 
 
   def self.fillModelByPredefinedSet
-      #item = Model1.new({'attr1' => 'ZORRRRO', 'attr2' => 'XORRRO', 'attr3' => 'CORRRRO'})
-      #item.save
+      item = Model1.new({'attr1' => 'ZORRRRO', 'attr2' => 'XORRRO', 'attr3' => 'CORRRRO'})
+      item.save
       item = Model1.new({'attr1' => '111', 'attr2' => '222', 'attr3' => '333'})
       item.save
   end
@@ -43,6 +43,7 @@ class Model1
 
       Rho::Ruby.callNativeCallback("myCallback01", "testString result 777");
   end
+
 
 
 end

@@ -11,11 +11,13 @@
 
 #import "rhodesruby/api/RhoRuby.h"
 
-@interface ViewController : UIViewController <IRhoRubyNativeCallback> {
+@interface ViewController : UIViewController <IRhoRubyNativeCallback, IRhoRubyRunnable> {
     
 }
 
 -(void) onRubyNativeWithParam:(id<IRhoRubyObject>)param;
+
+-(void) rhoRubyRunnableRun;
 
 @end
 

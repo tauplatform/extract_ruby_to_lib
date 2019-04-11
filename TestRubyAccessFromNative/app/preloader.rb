@@ -36,6 +36,18 @@
 # loads some module.
 #
 
+class String
+
+  # Convert camelCase to snake_case
+  def underscore
+    self.gsub(/::/, '/').
+    gsub(/([A-Z]+)([A-Z][a-z])/,'\1_\2').
+    gsub(/([a-z\d])([A-Z])/,'\1_\2').
+    tr("-", "_").
+    downcase
+  end
+end
+
 
 module Preloader
 
@@ -208,7 +220,8 @@ private
           self.preload_model model_name
       end  # sources.each
 
-      enhance_database
+    # only for special prepared DB with special methods !!!
+    #enhance_database
 
     # We rescue LoadError/SyntaxError during model load in case a require was
     # used in some code. While we require most modules above, we may still use
